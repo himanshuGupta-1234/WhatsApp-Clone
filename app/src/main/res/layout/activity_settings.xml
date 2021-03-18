@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/teal_700"
+    tools:context=".Settings">
+
+
+    <ImageView
+        android:id="@+id/backarrowSettings"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/hula"
+        android:layout_below="@+id/backarrowSettings"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileImageSettings"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="1dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        app:civ_border_color="#FF000000"/>
+
+        <ImageView
+            android:id="@+id/addImage"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_baseline_add_circle_24" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="10dp"
+
+            android:text="User Name :"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+
+            android:textSize="19sp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:textColor="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="10dp"
+
+                android:text="@string/about"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="19sp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/etAbout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/savesettings"
+            android:backgroundTint="@color/white"
+            android:layout_width="107dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/buttonback"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+
+        android:padding="45dp"
+        android:layout_below="@+id/hula"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/settingback"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="10dp"
+
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_security_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+        </ImageView>
+
+        <TextView
+
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="Privacy Policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="1dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_notifications_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+        </ImageView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="Notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_help_outline_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+        </ImageView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="Help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_security_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+        </ImageView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            android:textSize="17sp"
+            android:text="About Us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_group_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ImageView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="Invite a friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+

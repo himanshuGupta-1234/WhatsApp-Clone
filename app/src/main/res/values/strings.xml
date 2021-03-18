@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Chat</string>
+    <string name="app_logo">logo</string>
+    <string name="button_signup">signup</string>
+
+    <string name="name">Name</string>
+    <string name="enter_email_id">Enter Email id</string>
+    <string name="enter_paasword">Enter Paasword</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="new_user">New User</string>
+    <string name="sign_in">Sign In</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="user_name">User Name</string>
+    <string name="group_chat">Group Chat</string>
+    <string name="about">About :                 </string>
+    <string name="save">Save</string>
+    <string name="whatschat">WhatsChat</string>
+
+</resources>
